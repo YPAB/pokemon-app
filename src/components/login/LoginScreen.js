@@ -20,7 +20,7 @@ export const LoginScreen = () => {
       }
 
       dispatch(action);
-      navigate('/pokemones', {
+      navigate('/', {
         replace:true
 
       });
