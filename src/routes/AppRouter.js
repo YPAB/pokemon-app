@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { LoginScreen } from '../components/login/LoginScreen';
 import { DashboradRoutes } from './DashboradRoutes';
+import { PrivateRoute } from './PrivateRoute';
 
 export const AppRouter = () => {
   return (
@@ -10,7 +11,13 @@ export const AppRouter = () => {
        
         <Route path="/login" element={<LoginScreen />} />
 
-        <Route path="/*" element={<DashboradRoutes/>}/>
+        <Route path="/*" element={
+          <PrivateRoute>
+            <DashboradRoutes/>
+          </PrivateRoute>
+
+          }
+        />
 
       </Routes>
     </BrowserRouter>
