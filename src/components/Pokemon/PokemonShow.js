@@ -1,6 +1,5 @@
-import { useParams,Navigate } from "react-router";
+import { useParams,Navigate,useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
 
 
 export const PokemonShow = () => {
