@@ -26,8 +26,8 @@ export const PokemonScreen = () => {
 
 
   return (
-  
-      <div className="row rows-cols-1 row-cols-md-3 g-3">
+
+       <div className="row rows-cols-1 row-cols-md-3 g-3 justify-content-center m-2">
             {
                 pokemons.map(({ name, id }) => (
                   
